@@ -1,0 +1,23 @@
+
+spring:
+  application:
+    name: ms-client-pago
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/aux_payment_db
+    username: postgres
+    password: admin
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8705/eureka/
