@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: server-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Arquitectura-de-Software-02-2023/server-config.git
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8705/eureka/
+
+encrypt:
+  key: "dG-Q&Fci19dWZ}G?0)A"
